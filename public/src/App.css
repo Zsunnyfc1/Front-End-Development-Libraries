@@ -1,0 +1,67 @@
+.App {
+  text-align: center;
+ 
+}
+
+.App-header {
+  background-color: #FEF9EF;
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+#quote-box{
+  background-color:white;
+  width: 650px;
+  border-radius: 10px;
+  color:black;
+  padding: 40px;
+  box-shadow: 10px 5px 5px #1DA1F2;
+}
+
+#author{
+  text-align: end;
+}
+
+button,
+#tweet-quote{
+  display: inline-block;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+button{
+  background-color:rgba(10, 7, 7, 0.616);
+  padding: 15px;
+}
+
+#tweet-quote{
+  background-color:rgba(10, 7, 7, 0.616);
+  float:right;
+  margin-top: 10px;
+}
+
+#twittericon{
+  width: 12rem;
+  font-size: 180px;
+}
+
+@media (max-width: 700px){
+  #quote-box {
+    width: 300px;
+  }
+}
+
+
+
+
+
+
