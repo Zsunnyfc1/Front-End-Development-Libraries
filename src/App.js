@@ -9,12 +9,10 @@ function App() {
 //const [state, setstate] = useState(initialState)
 const [quote, setQuote] = useState()
 const [author, setAuthor] = useState()
-const [randomNumber, setrandomNumber] = useState()
 const [colorAccent, setColorAccent] = useState()
 
 const getRandomQuote = () => {
   let randomInteger=Math.floor (Math.random()*(allQuotes.length-1)) 
-  setrandomNumber(randomInteger)
   setColorAccent(Colors[randomInteger])
   setQuote(allQuotes[randomInteger].quote)
   setAuthor(allQuotes[randomInteger].author)
@@ -34,7 +32,7 @@ const getRandomQuote = () => {
         <a 
         id ="tweet-quote" style={{backgroundColor:colorAccent}}
         href={encodeURI( `https://www.twitter.com/intent/tweet?text=${quote} -${author}` )}
-        target = "_blank">
+        target = "_blank" rel="noreferrer" >
           Tweet
         </a>
 
